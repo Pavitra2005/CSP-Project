@@ -1,0 +1,31 @@
+<div class="container">
+  <div class="re-btn">
+    <button class="rbtn" (click)="getRegistrations()">Get Registrations</button>
+  </div>
+  
+  <table class="registration-table" *ngIf="registrations.length > 0">
+    <thead>
+      <tr>
+        <th>Username</th>
+        <th>Email</th>
+        <th>Password</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let registration of registrations">
+        <td>{{ registration.username }}</td>
+        <td>
+          <input class="input-field" [(ngModel)]="registration.email" placeholder="Email"/>
+        </td>
+        <td>
+          <input class="input-field" [(ngModel)]="registration.password" type="password" placeholder="Password"/>
+        </td>
+        <td>
+          <button class="action-btn update-btn" (click)="updateRegistration(registration)">Update</button>
+          <button class="action-btn delete-btn" (click)="deleteRegistration(registration.username)">Delete</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>

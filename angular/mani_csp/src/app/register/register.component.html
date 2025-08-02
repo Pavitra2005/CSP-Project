@@ -1,0 +1,28 @@
+<div class="register-container">
+    <h2>Register</h2>
+  
+    <!-- Display message -->
+    <div *ngIf="message" [ngClass]="messageClass" class="message">{{ message }}</div>
+  
+    <!-- Registration Form -->
+    <form (ngSubmit)="register()" #registerForm="ngForm">
+      <div class="form-group">
+        <label for="username">Username</label>
+        <input type="text" id="username" name="username" [(ngModel)]="username" required>
+        <span class="error">Please enter your name</span>
+      </div>
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" [(ngModel)]="email" required>
+        <span class="error">Please enter a valid email address</span>
+      </div>
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" [(ngModel)]="password" pattern="^(?=.[a-z])(?=.[A-Z])(?=.*\d).{8,}$"  required>
+        <span class="error">Please enter a valid password</span>
+      </div>
+      <button type="submit">Register</button>
+      <p>Already have an account? <a routerLink="/login">Login here</a></p>
+    </form>
+  </div>
+  
