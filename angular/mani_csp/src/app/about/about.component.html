@@ -1,0 +1,200 @@
+<style>
+    .container {
+    overflow: hidden;
+   }
+   
+   .cards {
+       display: grid;
+       grid-template-columns: repeat(3, 1fr);
+       gap: 20px;
+       align-content: center;
+       padding: 20px;
+   }
+   
+   .card {
+       background-color: transparent;
+       width: 300px;
+       height: 300px;
+       perspective: 1000px;
+   }
+   
+   .card-inner {
+       position: relative;
+       width: 100%;
+       height: 100%;
+       text-align: center;
+       transition: transform 0.6s;
+       transform-style: preserve-3d;
+       box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+   }
+   
+   .card:hover .card-inner {
+       transform: rotateY(180deg);
+   }
+   
+   .card-front,
+   .card-back {
+       position: absolute;
+       width: 100%;
+       height: 100%;
+       backface-visibility: hidden;
+   }
+   
+   .card-front {
+       background-color: #bbb;
+       color: black;
+   }
+   
+   .card-back {
+       background-color: white;
+       transform: rotateY(180deg);
+   }
+   
+   .card-front img,
+   .card-back img {
+       width: 100%;
+       height: 100%;
+       object-fit: cover;
+   }
+   </style>
+   <div class="container">
+     <div class="cards">
+       <div class="card">
+           <div class="card-inner">
+               <div class="card-front">
+                   <img src="https://etimg.etb2bimg.com/photo/99221048.cms" style="width: 100%; height: 100%;">
+               </div>
+               <div class="card-back">
+                   <h1>SOFTWARE</h1>
+                   <p>womens plays a major role in software industry.
+                      womens are developing new emerging technologies.
+                      Now-a-days womens are actively participaate in 
+                      all the technical events.In software industry
+                      most of the working people are womens. </p>
+               </div>
+           </div>
+       </div>
+   
+       <div class="card">
+           <div class="card-inner">
+               <div class="card-front">
+                   <img src="https://img.freepik.com/premium-photo/women-with-fists-air-fighting-their-rights_841543-48026.jpg?size=626&ext=jpg&ga=GA1.1.987086460.1721484917&semt=ais_user" style="width: 100%; height: 100%;">
+               </div>
+               <div class="card-back">
+                   <h1>YOUTH</h1>
+                   <p>most of the youth in our society is try to stand their own legs 
+                      and not depended to any of them at the particular age.they always
+                      try to be get their own identity in our society and teach the people who
+                      are discourage her.</p>
+               </div>
+           </div>
+       </div>
+   
+       <div class="card">
+           <div class="card-inner">
+               <div class="card-front">
+                   <img src="https://image.shutterstock.com/image-photo/senior-woman-working-small-grocery-260nw-1369726409.jpg" style="width: 100%; height: 100%;">
+               </div>
+               <div class="card-back">
+                   <h1>BUSSINESS</h1>
+                   <p> In the earlier years, the business sector was dominated by men, from 
+                     the small scale businesses to large scale multinational organizations.
+                     Now-a-days womens are actively participate in the bussiness sectors.womens
+                     are good to run their own bussiness.
+                   </p>
+               </div>
+           </div>
+       </div>
+       <div class="card">
+           <div class="card-inner">
+               <div class="card-front">
+                   <img src="https://thumbs.dreamstime.com/b/indian-beautiful-female-doctor-17989399.jpg" style="width: 100%; height: 100%;">
+               </div>
+               <div class="card-back">
+                   <h1>DOCTORS</h1>
+                   <p>Doctors play a crucial role in maintaining the health and well-being of individuals and communities.
+                      They are responsible for diagnosing and treating illnesses, injuries, and medical conditions.the lady 
+                      doctors are welly managed their personal life and professional life.
+                     </p>
+               </div>
+           </div>
+       </div>
+   
+       <div class="card">
+           <div class="card-inner">
+               <div class="card-front">
+                   <img src="http://www.proheadshots.ca/wp-content/uploads/2016/02/lawyer-headshot-vancouver-1039B-1024x683.jpg" style="width: 100%; height: 100%;">
+               </div>
+               <div class="card-back">
+                   <h1>LAWYERS</h1>
+                   <p>In a developing society, women lawyers must play an equal and
+                      important role in the development. Improvement in the traditional
+                       status of women lawyers.women lawyers gives tough compitetion
+                       to men lawyers.womens lawyers always fought for the justice.</p>
+               </div>
+           </div>
+       </div>
+   
+       <div class="card">
+           <div class="card-inner">
+               <div class="card-front">
+                   <img src="https://im.indiatimes.in/facebook/2018/Jan/india_has_maximum_women_pilots_in_the_world_1517298426.jpg" style="width: 100%; height: 100%;">
+               </div>
+               <div class="card-back">
+                   <h1>PILOTS</h1>
+                   <p>In the middle age, people had only one notion about the woman; that is, they were born
+                      to control the household chores and manage the children.
+                      But in today’s world, women empowerment has taken place 
+                      which has opened new doors for the women to thrive and shine.
+                      </p>
+               </div>
+           </div>
+       </div>
+   </div>
+   
+   
+   
+   </div>
+   <p>Women empowerment refers to making women powerful to make them capable 
+     of deciding for themselves. Women have suffered a lot through the years 
+     at the hands of men. In earlier centuries, they were treated as almost non-existent.
+      As if all the rights belonged to men even something as basic as
+      voting. As the times evolved, women realized their power. There on began the revolution for women empowerment.
+      As women were not allowed to make decisions for them, women empowerment came in like a breath of fresh air.
+       It made them aware of their rights and how they must make their own place in society rather than depending on a man. 
+       It recognized the fact that things cannot simply work in someone’s favor because of their gender. However, we still
+        have a long way to go when we talk about the reasons why we need it.Almost every country, no matter how progressive
+         has a history of ill-treating women. In other words, women from all over the world have been rebellious to reach the
+         status they have today.While the western countries are still making progress, third world countries like India still 
+         lack behind in Women Empowerment.In India, women empowerment is needed more than ever. India is amongst the countries 
+         which are not safe for women. There are various reasons for this. Firstly, women in India are in danger 
+         of honor killings. Their family thinks its right to take their lives if they bring shame to the reputation of their legacy.</p>
+     <img src="https://www.empoweringambitiouswomen.com/wp-content/uploads/Empowering-Female-Quotes-2.png" width="1500" height="500">
+     <p>Moreover, the education and freedom scenario is very regressive here. Women are not allowed to pursue higher education,
+          they are married off early. The men are still dominating women in some regions like it’s the woman’s duty to work for 
+          him endlessly. They do not let them go out or have freedom of any kind.Women must be given equal opportunities in every
+           field, irrespective of gender. Moreover, they must also be given equal pay. We can empower women by abolishing child
+            marriage. Various programs must be held where they can be taught skills to fend for themselves in case they face financial
+             crisis.Women empowerment is one of the most debated social topics. It means recognising the importance of gender equality, 
+             and women’s participation in decision-making and offering them equal opportunities in education, employment, others. Women 
+             empowerment talks about making women strong so that they can lead a healthy and prosperous life and contribute to the development
+             of society. Today we will be discussing some sample essay on women empowerment, which will cover details like how can eliminatediscrimination 
+             against women, challenge traditional gender roles, and promote equal opportunities for women in various aspects of life.Women 
+             empowerment refers to the practice of making women independent so that they can make their own decisions and take decisions without
+             any familial or societal restrictions. In simple terms, it entitles women to take charge of their personal development. 
+             The patriarchal society has always deprived women of their rights.
+     </p>
+     <img src="https://dm0qx8t0i9gc9.cloudfront.net/thumbnails/video/V1xq1AADx/videoblocks-woman-entrepreneur-working-on-laptop-at-co-working-office-or-library-looks-smart-bookshelves-knowledge-and-self-development_b6bdsmkn7_thumbnail-1080_01.png" width="1500" height="600">
+     <p>The word ‘Women Empowerment’ itself implies that women are not powerful enough - they need to be empowered. This painful truth 
+         has been in existence for a long long time. It is in recent years that noticeable work started beginning to lift women out of 
+         the abyss of insignificance and powerlessness. The patriarchal society suppressed women’s freedom across the world. Women were
+          not allowed to vote or even put forward any opinion. Women were confined to their homes. As time progressed, they realised that
+           their life meant much more than just serving in the household. As more and more women started crossing the man-made barriers,
+            the world began to witness the rise of women. Unlike men, women never try to stifle the voice of their opposite gender. They
+             hold the hands of all the downtrodden people - men and women both - and they pull them out of misfortune as they try to
+              improve their lives.No woman can be empowered if she is not financially independent. Gone are the days when women had to
+               depend on their fathers or husbands to get things that they wanted. From the 20th century onwards women got more opportunities
+                to join the workforce. However, at the same time, many women in England were forced to work both in the workplace and in the
+                 household to support the family. After the Second World War women, on their own, chose to join the workforce. Today more and
+                  more jobs are opening up for women. Women are proving to be worthy of the designations assigned to them.
+     </p>

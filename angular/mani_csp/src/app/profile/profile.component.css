@@ -1,0 +1,107 @@
+/* Container styling */
+.container {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin-top: 100px;
+  margin-left: 200px;
+  padding: 20px;
+  max-width: 900px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Button styling */
+.re-btn {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.rbtn {
+  background-color: #007bff;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.rbtn:hover {
+  background-color: #0056b3;
+}
+
+/* Table styling */
+.registration-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.registration-table thead {
+  background-color: #007bff;
+  color: #ffffff;
+}
+
+.registration-table th {
+  padding: 12px;
+  text-align: left;
+}
+
+.registration-table tbody td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.registration-table tbody tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.registration-table tbody tr:hover {
+  background-color: #e9ecef;
+}
+
+/* Input field styling */
+.input-field {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.input-field:focus {
+  border-color: #007bff;
+  outline: none;
+  box-shadow: 0 0 3px rgba(0, 123, 255, 0.5);
+}
+
+/* Button styling for actions */
+.action-btn {
+  border: none;
+  padding: 8px 12px;
+  font-size: 14px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin: 2px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.update-btn {
+  background-color: #28a745;
+  color: #ffffff;
+}
+
+.update-btn:hover {
+  background-color: #218838;
+}
+
+.delete-btn {
+  background-color: #ff642c;
+  color: #ffffff;
+}
+
+.delete-btn:hover {
+  background-color: #ff0000;
+}
